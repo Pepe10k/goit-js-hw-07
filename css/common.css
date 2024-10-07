@@ -172,7 +172,7 @@ h1 {
   border-radius: 4px;
   width: 360px;
   height: 40px;
-  transition: border 0.3s ease-in-out;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:hover {
@@ -197,7 +197,7 @@ h1 {
   color: #fff;
   border: none;
   margin-top: 8px;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover {
@@ -239,4 +239,99 @@ h1 {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+}
+
+/* task-6 */
+
+#controls {
+  background-color: #f6f6fe;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  gap: 16px;
+  width: 486px;
+  height: 104px;
+  align-items: center;
+}
+
+.input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:hover {
+  border: 1px solid #000;
+}
+
+.btn-create {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-create:hover {
+  background-color: #6c8cff;
+}
+
+.btn-destroy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #ff4e4e;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-destroy:hover {
+  background-color: #ff7070;
+}
+
+#boxes {
+  background-color: #f6f6fe;
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  overflow-x: auto;
+  padding: 10px;
+  border-radius: 8px;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+#boxes div {
+  flex-shrink: 0;
 }
